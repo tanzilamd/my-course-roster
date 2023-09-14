@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to C Programming",
+        "cover": "https://i.ibb.co/F8Hd7bF/Rectangle-2-2.png",
+        "short_description": "Master the fundamentals of C programming language, from variables and loops to functions and memory management, in this comprehensive course.",
+        "price": 15000,
+        "duration": 4
+    },
+    {
+        "id": 2,
+        "title": "Algorithms and Data Structures",
+        "cover": "https://i.ibb.co/MNVcd72/Rectangle-2-3.png",
+        "short_description": "Dive deep into algorithms and data structures, and learn how to design and analyze efficient solutions for complex computational problems.",
+        "price": 18000,
+        "duration": 10
+    },
+    {
+        "id": 3,
+        "title": "C++ Programming Essentials",
+        "cover": "https://i.ibb.co/nPvdsm1/Rectangle-2-4.png",
+        "short_description": "Explore the power of C++ programming with a focus on object-oriented concepts, templates, and advanced features to build robust applications.",
+        "price": 7000,
+        "duration": 2
+    },
+    {
+        "id": 4,
+        "title": "Data Structures and Algorithms",
+        "cover": "https://i.ibb.co/zG7zN8T/Rectangle-3.png",
+        "short_description": "Learn how to implement data structures and algorithms using Python, and apply them to real-world problem-solving scenarios.",
+        "price": 9000,
+        "duration": 4
+    },
+    {
+        "id": 5,
+        "title": "OOP Python",
+        "cover": "https://i.ibb.co/n8qtmWZ/Rectangle-2.png",
+        "short_description": "Get hands-on experience in object-oriented programming with Python, and build reusable and maintainable software projects.",
+        "price": 16000,
+        "duration": 1
+    },
+    {
+        "id": 6,
+        "title": "Software Engineering Best Practices",
+        "cover": "https://i.ibb.co/MRWpB23/Rectangle-2-5.png",
+        "short_description": "Explore software engineering principles, methodologies, and best practices to develop high-quality and scalable software systems.",
+        "price": 7500,
+        "duration": 5
+    },
+    {
+        "id": 7,
+        "title": "AWS Cloud Computing Fundamentals",
+        "cover": "https://i.ibb.co/8Bm17kZ/Rectangle-3-1.png",
+        "short_description": "Learn the basics of Amazon Web Services (AWS) cloud computing, including services, infrastructure, and deployment for scalable applications.",
+        "price": 50000,
+        "duration": 2
+    },
+    {
+        "id": 8,
+        "title": "Database Design and Management",
+        "cover": "https://i.ibb.co/xXt4h8s/Rectangle-2-1.png",
+        "short_description": "Master the art of designing and managing relational databases, including SQL, normalization, and query optimization techniques.",
+        "price": 65000,
+        "duration": 5
+    },
+    {
+        "id": 9,
+        "title": "Problem Solving and Coding Challenges",
+        "cover": "https://i.ibb.co/QJmh8D5/Rectangle-2-6.png",
+        "short_description": "Enhance your problem-solving skills with a variety of coding challenges and algorithms, preparing you for technical interviews and coding competitions.",
+        "price": 12000,
+        "duration": 3
+    }
+]
