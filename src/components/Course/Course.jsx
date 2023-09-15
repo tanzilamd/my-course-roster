@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { FiDollarSign } from "react-icons/fi";
 import { BsBook } from "react-icons/bs";
 
-const Course = ({ course }) => {
+const Course = ({ course, handleAddToCart }) => {
     const { title, cover, short_description, price, duration } = course;
-    console.log(course);
+
     return (
         <div className="bg-white p-4 rounded-lg">
             <img className="w-full" src={cover} alt="" />
@@ -25,7 +25,12 @@ const Course = ({ course }) => {
                         <span>Credit: {duration}</span>
                     </div>
                 </div>
-                <button className="btn-select w-full py-2 font-bold">
+                <button
+                    onClick={() => {
+                        handleAddToCart(course);
+                    }}
+                    className="btn-select w-full py-2 font-bold"
+                >
                     Select
                 </button>
             </div>
@@ -35,6 +40,7 @@ const Course = ({ course }) => {
 
 Course.propTypes = {
     course: PropTypes.object.isRequired,
+    handleAddToCart: PropTypes.func,
 };
 
 export default Course;
