@@ -7,7 +7,7 @@ const Course = ({ course, handleAddToCart }) => {
     const { title, cover, short_description, price, duration } = course;
 
     return (
-        <div className="bg-white p-4 rounded-lg">
+        <div className="bg-white p-4 rounded-lg mx-4 md:mx-0">
             <img className="w-full" src={cover} alt="" />
 
             <div className="space-y-4">
