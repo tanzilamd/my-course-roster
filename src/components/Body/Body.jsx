@@ -8,6 +8,8 @@ import Cart from "../Cart/Cart";
 const Body = () => {
     const [cartItems, setCartItems] = useState([]);
     const [remainingHours, setRemainingHours] = useState(20);
+    const [totalCredits, setTotalCredit] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0);
 
     // Warnings
     const notifySimilarItem = () => {
@@ -19,10 +21,11 @@ const Body = () => {
 
     const handleAddToCart = (course) => {
         if (cartItems.find((item) => item.id == course.id) !== undefined) {
-            console.log("similar item exists");
-
             notifySimilarItem();
-        } else if (course.duration > remainingHours) {
+        } else if (
+            course.duration > remainingHours ||
+            20 - totalCredits < course.duration
+        ) {
             notifyRemainingHours();
         } else {
             // System of adding a object to array
@@ -32,6 +35,12 @@ const Body = () => {
 
             // Remaining Hours
             setRemainingHours(remainingHours - course.duration);
+
+            // total credit
+            setTotalCredit(totalCredits + course.duration);
+
+            // total price
+            setTotalPrice(totalPrice + course.price);
         }
     };
 
@@ -45,12 +54,9 @@ const Body = () => {
                 <Cart
                     cartItems={cartItems}
                     remainingHours={remainingHours}
+                    totalCredits={totalCredits}
+                    totalPrice={totalPrice}
                 ></Cart>
-                {/* <div>
-                    {cartItems.map((item) => (
-                        <li>{item.title}</li>
-                    ))}
-                </div> */}
             </div>
         </div>
     );
