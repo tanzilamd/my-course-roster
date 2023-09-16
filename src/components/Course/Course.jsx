@@ -10,12 +10,14 @@ const Course = ({ course, handleAddToCart }) => {
         <div className="bg-white p-4 rounded-lg mx-4 md:mx-0">
             <img className="w-full" src={cover} alt="" />
 
-            <div className="space-y-4">
-                <h2 className="text-lg text-[#1C1B1B] font-bold mt-2">
+            <div>
+                <h2 className="text-xl text-[#1C1B1B] font-bold mt-2">
                     {title}
                 </h2>
-                <p className="text-[#1c1b1b99] text-sm">{short_description}</p>
-                <div className="flex text-[#1C1B1B] justify-between items-center mb-4">
+                <p className="text-[#1c1b1b99] text-sm text-justify mt-1">
+                    {short_description}
+                </p>
+                <div className="flex text-[#1C1B1B] justify-between items-center my-4">
                     <div className="flex justify-between items-center gap-1">
                         <FiDollarSign />
                         <span>Price: {price}</span>

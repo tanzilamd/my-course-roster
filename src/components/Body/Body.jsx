@@ -56,7 +56,7 @@ const Body = () => {
     return (
         <div>
             <ToastContainer theme="colored" />;
-            <div className="flex flex-col-reverse md:flex md:flex-row gap-2 container mx-auto mb-10">
+            <div className="flex flex-col-reverse lg:flex lg:flex-row gap-2 container mx-auto mb-10">
                 <Courses handleAddToCart={handleAddToCart}></Courses>
                 <Cart
                     cartItems={cartItems}
