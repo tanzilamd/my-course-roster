@@ -11,7 +11,7 @@ const Course = ({ course, handleAddToCart }) => {
             <img className="w-full" src={cover} alt="" />
 
             <div>
-                <h2 className="text-xl text-[#1C1B1B] font-bold mt-2">
+                <h2 className="text-lg text-[#1C1B1B] font-bold mt-2">
                     {title}
                 </h2>
                 <p className="text-[#1c1b1b99] text-sm text-justify mt-1">
