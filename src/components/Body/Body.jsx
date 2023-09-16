@@ -19,6 +19,11 @@ const Body = () => {
         toast.error("You don't have sufficient credit!");
     };
 
+    // Success
+    const notifyCourseAdded = () => {
+        toast.success("Course added!");
+    };
+
     const handleAddToCart = (course) => {
         if (cartItems.find((item) => item.id == course.id) !== undefined) {
             notifySimilarItem();
@@ -41,6 +46,8 @@ const Body = () => {
 
             // total price
             setTotalPrice(totalPrice + course.price);
+
+            notifyCourseAdded();
         }
     };
 
